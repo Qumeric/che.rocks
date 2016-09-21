@@ -1,7 +1,3 @@
-.carousel-caption{
-    color: rgba(0,0,0,0.75);
-}
-
 .carousel-control{
     color: rgba(0,0,0,0.75);
 }
@@ -23,7 +19,10 @@
 }
 
 .fading {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(201, 201, 201, 1) 100%, rgba(255, 201, 201, 1) 100%), url('../img/water.jpg') no-repeat;
-  /*height: 494px;
-  width: 620px;*/
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(201, 201, 201, 0) 40%, rgba(201, 201, 201, 1) 100%), url('../img/water.jpg') no-repeat;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
 }
