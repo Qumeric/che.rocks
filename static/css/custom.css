@@ -6,3 +6,24 @@
     color: rgba(0,0,0,0.75);
 }
 
+.lower-carousel-caption {
+    text-shadow:0 1px 2px rgba(0,0,0,0.6);
+}
+
+.main-raised {
+    margin: -360px 30px 0px;
+}
+
+.profile-page .header {
+    height: 650px;
+}
+
+.fading {
+    background: url('../img/water.jpg');
+}
+
+.fading {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(201, 201, 201, 1) 100%, rgba(255, 201, 201, 1) 100%), url('../img/water.jpg') no-repeat;
+  /*height: 494px;
+  width: 620px;*/
+}

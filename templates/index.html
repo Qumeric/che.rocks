@@ -5,8 +5,7 @@
 {% include 'navbar.html' %}
 
 <div class="wrapper">
-    <div class="header header-filter" style="background-image: url('static/img/water.jpg');"></div>
-
+    <div class="header fading"></div>
     <div class="main main-raised">
         <div class="profile-content">
             <div class="container">
@@ -17,56 +16,51 @@
                         </div>
                         <div class="name">
                             <h3 class="title">Valery Cherepanov</h3>
-                            <h6>Hacker wannabe</h6>
+                            <h6>Hacker</h6>
                         </div>
                     </div>
                 </div>
-                <!--<div class="description text-center">
-                    <p>Loerm ipsum.</p>
-                </div>-->
 
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="profile-tabs">
-                            <div class="nav-align-center">
-                                <ul class="nav nav-pills" role="tablist">
-                                    <li class="active">
-                                        <a href="#projects" role="tab" data-toggle="tab">
-                                            <i class="material-icons">apps</i>
-                                            Projects
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#about" role="tab" data-toggle="tab">
-                                            <i class="material-icons">face</i>
-                                            About
-                                        </a>
-                                    </li>
-                                    <!--<li>
-                                        <a href="#contact" role="tab" data-toggle="tab">
-                                            <i class="material-icons">contacts</i>
-                                            Get in touch
-                                        </a>
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="profile-tabs">
+                        <div class="nav-align-center">
+                            <ul class="nav nav-pills" role="tablist">
+                                <li class="active">
+                                    <a href="#projects" role="tab" data-toggle="tab">
+                                        <i class="material-icons" style="padding: 15px 0;">apps</i>
+                                        Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#about" role="tab" data-toggle="tab">
+                                        <i class="material-icons" style="padding: 15px 0;">face</i>
+                                        About
+                                    </a>
+                                </li>
+                                <!--<li>
+                                    <a href="#contact" role="tab" data-toggle="tab">
+                                    <i class="material-icons">contacts</i>
+                                    Get in touch
+                                    </a>
                                     </li>-->
-                                </ul>
+                            </ul>
 
-                                <div class="tab-content gallery">
-                                    <div class="tab-pane active" id="projects">
-                                        {% include 'projects.html' %}
-                                    </div>
+                            <div class="tab-content gallery">
+                                <div class="tab-pane active" id="projects">
+                                    {% include 'projects.html' %}
+                                </div>
 
-                                    <div class="tab-pane text-center" id="about">
-                                        {% include 'about.html' %}
-                                    </div>
-                                    <!--<div class="tab-pane text-center section-landing" id="contact">
-                                        {% include 'contact.html' %}
+                                <div class="tab-pane text-center" id="about">
+                                    {% include 'about.html' %}
+                                </div>
+                                <!--<div class="tab-pane text-center section-landing" id="contact">
+                                    {% include 'contact.html' %}
                                     </div>-->
 
-                                </div>
                             </div>
                         </div>
-                        <!-- End Profile Tabs -->
                     </div>
+                    <!-- End Profile Tabs -->
                 </div>
             </div>
         </div>
