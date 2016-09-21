@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://qumeric.info">Qumeric</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navigation-example">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="{{ url_for('static', filename='CV.pdf') }}" target="_blank">
+                        <i class="material-icons">cloud_download</i> CV
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/qumeric" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/qumeric" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.vk.com/qumeric" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <div class="header header-filter" style="background-image: url('static/img/water.jpg');"></div>
+
+    <div class="main main-raised">
+        <div class="profile-content">
+            <div class="container">
+                <div class="row">
+                    <div class="profile">
+                        <div class="avatar">
+                            <img src="{{ url_for('static', filename='img/valery.jpg') }}" alt="Circle Image" class="img-circle img-responsive img-raised">
+                        </div>
+                        <div class="name">
+                            <h3 class="title">Valery Cherepanov</h3>
+                            <h6>Hacker wannabe</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="description text-center">
+                    <p>This is my personal website. Here you can find a list of my projects and some information about me.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="profile-tabs">
+                            <div class="nav-align-center">
+                                <ul class="nav nav-pills" role="tablist">
+                                    <li class="active">
+                                        <a href="#projects" role="tab" data-toggle="tab">
+                                            <i class="material-icons">apps</i>
+                                            Projects
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#education" role="tab" data-toggle="tab">
+                                            <i class="material-icons">school</i>
+                                            Education
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact" role="tab" data-toggle="tab">
+                                            <i class="material-icons">contacts</i>
+                                            Get in touch
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content gallery">
+                                    <div class="tab-pane active" id="projects">
+                                        <h3>Instabattle</h3>
+                                        <p>Work in progress. Sorry if the live version doesn't work properly.</p>
+                                        <p><i class="fa fa-globe"></i>&nbsp;<a href="http://instabattle.herokuapp.com">live</a></p>
+                                        <p><i class="fa fa-github"></i>&nbsp;<a href="https://github.com/qumeric/instabattle">instabattle</a></p>
+
+                                        <h3><i class="fa fa-github"></i>&nbsp;<a href="https://github.com/qumeric/paclitaxel-classify">Paclitaxel Classify</a></h3>
+                                        <p>Classification of cells under influence of the drug Paclitaxel (Taxol).</p>
+                                        <iframe src="https://docs.google.com/presentation/d/1WMHLelgOt6VetYuVmEKelA8L8Lu7rYUWecJhEo6W0GI/embed?start=false&loop=false&delayms=5000" frameborder="0" width="560" height="344" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+                                        <h3>Fall</h3>
+                                        <p>A game. Works on Android and desktop platforms.</p>
+                                        <p>Should be published in Google Play soon.</p>
+                                        <p><i class="fa fa-github"></i>&nbsp;<a href="https://github.com/qumeric/fall">fall</a></p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QU9-IxkCzlY" frameborder="0" allowfullscreen></iframe>
+
+                                        <h3>Tetris</h3>
+                                        <p>Yet another tetris clone</p>
+                                        <p><i class="fa fa-github"></i>&nbsp;<a href="https://github.com/qumeric/tetris">tetris</a></p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/a_PuiySvJ6w" frameborder="0" allowfullscreen></iframe>
+
+
+                                        <h3>Travelling Salesman Problem (TSP) solver</h3>
+                                        <p><i class="fa fa-github"></i>&nbsp;<a href="https://github.com/qumeric/tsp-suboptimal">tsp-suboptimal</a></p>
+                                        <!-- Carousel Card -->
+                                        <div class="card card-raised card-carousel">
+                                            <div id="carousel-tsp" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel slide" data-ride="carousel">
+
+                                                    <!-- Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#carousel-tsp" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#carousel-tsp" data-slide-to="1"></li>
+                                                        <li data-target="#carousel-tsp" data-slide-to="2"></li>
+                                                    </ol>
+
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner">
+                                                        <div class="item active">
+                                                            <img src="{{ url_for('static', filename='img/tsp10.png') }}" alt="Small Solution">
+                                                            <div class="carousel-caption">
+                                                                <h4><i class="material-icons">linear_scale</i>10 points</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="{{ url_for('static', filename='img/tsp50.png') }}" alt="Medium Solution">
+                                                            <div class="carousel-caption">
+                                                                <h4><i class="material-icons">linear_scale</i>50 points</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <img src="{{ url_for('static', filename='img/tsp250.png') }}" alt="Large Solution">
+                                                            <div class="carousel-caption">
+                                                                <h4><i class="material-icons">linear_scale</i> 250 points</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Controls -->
+                                                    <a class="left carousel-control" href="#carousel-tsp" data-slide="prev">
+                                                        <i class="material-icons">keyboard_arrow_left</i>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#carousel-tsp" data-slide="next">
+                                                        <i class="material-icons">keyboard_arrow_right</i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Carousel Card -->
+                                        <p>Implementation of 6 different solving algorithms, namely:</p>
+                                        <ul>
+                                            <li>Brute force</li>
+                                            <li>Branch and bound</li>
+                                            <li>2-OPT algorithm (using MST)</li>
+                                            <li>Annealing imitation</li>
+                                            <li>Closest neighbor</li>
+                                            <li>Ant algorithm</li>
+                                        </ul>
+
+                                        <h3>Magnets</h3>
+                                        <p><i class="fa fa-github"></i>&nbsp;<a href="https://github.com/qumeric/magnets">magnets</a></p>
+                                        <p>Written at EduGames hackathon (team "Shaitan")</p>
+                                        <iframe src="//vk.com/video_ext.php?oid=185223905&id=171185401&hash=e6c40fb662436a6d&hd=2" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+
+                                    <div class="tab-pane text-center" id="education">
+                                        <ul>
+                                            <li>Finished Moscow Lyceum 1581 of Bauman Moscow State University</li>
+                                            <li>Currently second year student  at Saint Petersburg Academic University of RAS studying Mathematics and Information Technology</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane text-center" id="contact">
+                                        <ul>
+                                            <li><i class="fa fa-envelope"></i>&nbsp;<a href="mailto:qumidium@gmail.com">qumidium@gmail.com</a></li>
+                                            <li><i class="fa fa-paper-plane"></i>&nbsp;<a href="https://telegram.me/qumeric">qumeric</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Profile Tabs -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <nav class="pull-left">
+            <ul>
+                <li>
+                    <a href="http://www.creative-tim.com">
+                        Creative Tim
+                    </a>
+                </li>
+                <li>
+                    <a href="http://presentation.creative-tim.com">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="http://blog.creative-tim.com">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.creative-tim.com/license">
+                        Licenses
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright pull-right">
+            &copy; 2016, made with <i class="fa fa-heart heart"></i> by Creative Tim
+        </div>
+    </div>
+</footer>
+</body>
+{% endblock %}
