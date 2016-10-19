@@ -26,3 +26,31 @@
     font-size: 24px;
     font-weight: bold;
 }
+.navbar .navbar-nav > li > a .material-icons,
+.navbar .navbar-nav > li > a .fa {
+    font-size: 32px;
+    max-width: 32px;
+}
+
+.nav-pills > li > a {
+    min-width: 60px;
+}
+
+.nav-pills > li i {
+    display: inline;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
