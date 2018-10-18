@@ -1,2 +1,2 @@
-# qumeric.info
+# che.rocks
 My personal website
